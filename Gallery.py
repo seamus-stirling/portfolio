@@ -10,6 +10,7 @@ def homepage():
 
 
 def main ():
+    homepage()
     return
 
 main()
