@@ -1,9 +1,15 @@
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
+from streamlit import title
+
 
 def homepage():
-    st.Page("About_Me.py", title="About Me")
+    pages = st.navigation([
+        st.Page("About_Me.py", title="About Me"),
+        st.Page("coding_projects.py", title="Coding Projects")
+    ])
+    pages.run()
     with st.sidebar:
         st.sidebar.page_link("About_Me.py")
     st.set_page_config(layout="wide")
