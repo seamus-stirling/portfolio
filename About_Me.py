@@ -3,7 +3,6 @@ import pydeck as pdk
 import streamlit as st
 
 def bio_page ():
-    st.set_page_config(layout="wide")
     st.header("About Me")
     column_1, column_2 = st.columns([1, 4])
     with column_1:
