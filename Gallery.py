@@ -3,6 +3,7 @@ import pydeck as pdk
 import streamlit as st
 
 def homepage():
+    st.Page("About_Me.py", title="About Me")
     with st.sidebar:
         st.sidebar.page_link("About_Me.py")
     st.set_page_config(layout="wide")
